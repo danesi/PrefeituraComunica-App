@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".View.RecuperaSenha">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/edStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Por favor, ensira seu e-mail para recuperar sua senha"
+            android:textSize="20dp" />
+
+        <ProgressBar
+            android:id="@+id/carregando"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="300dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/fundo_ed"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textAppearance="@style/edStyle"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btRecuperar"
+            android:layout_width="300dp"
+            android:layout_height="52dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/funfo_btn"
+            android:text="Recuperar"
+            android:textAppearance="@style/edStyle"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btVoltar"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Voltar"
+            android:textAppearance="@style/edStyle" />
+    </LinearLayout>
+</ScrollView>
